@@ -1,0 +1,10 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 385E-2049
+D:.
+    list.txt
+    MC词典.csv
+    stopwordslist.txt
+    沪深300评论.py
+    
+没有子文件夹 
+
