@@ -37,3 +37,9 @@ github开源的部分主要为爬虫和情感分析的代码
 - 选取模型：
   - 选取了BERT 模型，用KERAS 来调用BERT 模型来对文本进行情感分析，模型参数使用的是Google 在中文语料上的预训练权重，测试集的准确率是0.9781。
   - 将经过预处理的评论输入模型中，经过分析得到句子情感的极性，即积极和消极两类，按照如下公式计算当日情感指数，完成对评论文本的处理。
+- 两部分 
+  1.  datesort
+  - 这个是自己写的，“result.csv”是keras-bert-emotional-classifier那里得到的结果；功能是把每一条评论的结果按日度统计；结果放在“result_sort.csv"里输出。
+  2.  keras-bert-emotional-classifier
+  - 用的是[github链接](https://github.com/AaronJny/DeepLearningSamples/tree/master)，基于这个魔改的
+   - 原来运行的时候是eval_test这个，我改了里面的文件读取，输入输出，改完以后的是eval_main;其他部分都没改，另外一个readme是原本就有的；得到的结果的result.xls，要放到datesort那个文件夹里得到最终结果 
